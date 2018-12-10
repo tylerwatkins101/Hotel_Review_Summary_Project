@@ -17,9 +17,9 @@ The potential guest inputs a selected hotel name and several useful summaries of
 
 ## Documentation of how the software is implemented
 
-The code is implemented as follows:
+The code is implemented as follows.
 
-There are 3 files:
+There are 3 files.
 
 1. cleaned_reviews.csv 
   - A csv file containing over 25,000 hotel reviews. Originally downloaded from https://www.kaggle.com/datafiniti/hotel-reviews which I cleaned in a separate jupyter notebook for preparation to use with this project. 
