@@ -5,7 +5,7 @@
 
 ## An overview of the function of the code. 
 
-The code is used to help potential hotel guests get a better overall view of a hotel's reviews.
+The purpose of the code is to help potential hotel guests quickly get a good overall summary of a hotel's reviews.
 
 The potential guest inputs a selected hotel name and several useful summaries of the past reviews are displayed including:
 
