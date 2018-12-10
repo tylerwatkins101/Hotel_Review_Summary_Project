@@ -41,8 +41,12 @@ After the code has run. The output of the hotel rating summary tool is displayed
 
 ## Documentation of the usage of the software
 
-The following software was used for this project and may need to be installed prior to running the tool:
-  - python 3.7
+The project was coded with python 3.7. If you don't have python you can install it here:
+https://www.python.org/downloads/
+
+The following package are used for this project and may need to be installed prior to running the tool. The recommended method of installation is to use pip install from the command line.
+ 
+ Packages:
   - jupyter notebook
   - numpy
   - pandas
