@@ -67,7 +67,7 @@ Including:
 
 After installing the above. To use the tool:
 
-1. Download these 3 files from https://github.com/tylerwatkins101/Hotel_Review_Summary_Project and store them in a folder.
+1. Download these 3 files from this github repository and store them in a folder.
 - cleaned_reviews.csv
 - hotel_review_summarizer.py
 - Hotel Rating Summary Tool - User Interface.ipynb
