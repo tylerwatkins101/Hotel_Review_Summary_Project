@@ -15,7 +15,7 @@ The potential guest inputs a selected hotel name and several useful summaries of
 - the 3 most important topics discussed by reviewers
 
 
-## Documentation of how the software is implemented with sufficient detail so that others can have a basic understanding of your code for future extension or any further improvement. 
+## Documentation of how the software is implemented
 
 The code is implemented as follows:
 
@@ -39,9 +39,9 @@ There are 3 files:
   
 After the code has run. The output of the hotel rating summary tool is displayed on the screen in the jupyter notebook.
 
-## Documentation of the usage of the software including either documentation of usages of APIs or detailed instructions on how to install and run a software, whichever is applicable. 
+## Documentation of the usage of the software
 
-The following software was used for this project and may need to be installed prior to using:
+The following software was used for this project and may need to be installed prior to running the tool:
   - python 3.7
   - jupyter notebook
   - numpy
@@ -61,4 +61,18 @@ Including:
   - nltk.download('wordnet')
   - nltk.download('vader_lexicon')
 
+After installing the above. To use the tool:
 
+1. Download the 3 files from https://github.com/tylerwatkins101/Hotel_Review_Summary_Project and store them in a folder.
+- cleaned_reviews.csv
+- hotel_review_summarizer.py
+- Hotel Rating Summary Tool - User Interface.ipynb
+
+2. From the folder you've stored the 3 files open a command line and type in 'jupyter notebook'.
+
+3. Open 'Hotel Rating Summary Tool - User Interface.ipynb' in your browser.
+
+4. Follow the instructions within the notebook.
+- Hit enter on the first cell to load the libraries needed.
+- Select a hotel name
+- Hit enter on the second cell to run the program
