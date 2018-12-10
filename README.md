@@ -1,39 +1,48 @@
-# CS 410 Final Project (Hotel Reviews Summarizer) 
-- UIUC MCS-DS (Fall 2018)
+# CS 410 Final Project (Hotel Rating Summary Tool) 
 - Tyler Watkins
+- Fall 2018
+- University of Illinois at Urbana-Champaign (MCS-DS)
 
-## An overview of the function of the code (i.e., what it does and what it can be used for). 
+## An overview of the function of the code. 
 
 The code is used to help potential hotel guests get a better overall view of a hotel's reviews.
 
-The potential guest inputs a selected Hotel name and several useful summaries of the past reviews are displayed including:
+The potential guest inputs a selected hotel name and several useful summaries of the past reviews are displayed including:
 
-- number of ratings, mean rating
+- total number of reviews and average review rating
 - common words used by reviewers
-- reviewer sentiment
-- the most important topics discussed by reviewers
+- a summary of reviewer sentiment (broken down proportionally into: positive, neutral, and negative)
+- the 3 most important topics discussed by reviewers
 
 
 ## Documentation of how the software is implemented with sufficient detail so that others can have a basic understanding of your code for future extension or any further improvement. 
 
-The code is implemented in a jupyter notebook as follows: 
+The code is implemented as follows:
 
-1. It takes as input the name of a user selected hotel from the hotels database found in cleaned_reviews.csv.
-2. The hotel name is passed to the function full_hotel_review which extracts all numerical and written reviews about the hotel and passes that information to 4 additional functions held within the function full_hotel_review. 
+There are 3 files:
 
-The 4 additional functions are:
-- rating_reviews - a function that returns the total number of reviews and mean review rating out of 5.
-- generate_wordcloud - a function that returns a wordcloud showing the most frequently used words used by reviewers.
-- get_sentiment - a function that returns a graphical overview of the negative, neutral and positive sentiment of reviewers.
-- get_topics - a function that returns a list of the 10 most important words in each of the 3 main topics reviewers focused on.
+1. cleaned_reviews.csv 
+  - A csv file containing over 25,000 hotel reviews. Originally downloaded from https://www.kaggle.com/datafiniti/hotel-reviews which I cleaned in a separate jupyter notebook for preparation to use with this project. 
 
-The output is displayed on the screen in a jupyter notebook.
+2. Hotel Rating Summary Tool - User Interface.ipynb
+- A jupyter notebook which gives the user the opportunity to choose a hotel name selected from cleaned_reviews.csv, and see the output of the hotel rating summary tool. 
+- The hotel name is passed to the function full_hotel_review which extracts all numerical and written reviews about the hotel and passes that information to 4 additional functions stored in the file hotel_review_summarizer.py. 
 
+3. hotel_review_summarizer.py
+- A python script containing the main 4 functions used by the hotel rating summary tool.
+- The 4 functions are:
+  - rating_reviews - a function that returns the total number of reviews and mean review rating out of 5.
+  - generate_wordcloud - a function that returns a wordcloud showing the most frequently used words used by reviewers.
+  - get_sentiment - a function that returns a graphical overview of the negative, neutral and positive sentiment of reviewers.
+  - get_topics - a function that returns a list of the 10 most important words in each of the 3 main topics reviewers focused on.
+  
+After the code has run. The output of the hotel rating summary tool is displayed on the screen in the jupyter notebook.
 
 ## Documentation of the usage of the software including either documentation of usages of APIs or detailed instructions on how to install and run a software, whichever is applicable. 
 
-The following packages were used in this project:
-- sklearn
+The following software was used for this project and may need to be installed prior to using:
+- python 3.7
+- jupyter notebook
 - numpy
 - pandas
 - matplotlib
@@ -41,7 +50,7 @@ The following packages were used in this project:
 - wordcloud
 - gensim
 - re
-- pyLDAvis
+- string
 - nltk
 
 Including:
@@ -50,3 +59,5 @@ Including:
 - nltk.download('averaged_perceptron_tagger')
 - nltk.download('wordnet')
 - nltk.download('vader_lexicon')
+
+
